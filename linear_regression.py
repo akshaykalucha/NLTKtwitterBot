@@ -16,6 +16,7 @@ class LinearRegression:
         self.weights = np.zeros(n_features)
         self.bias = 0
 
+        # gradient descent
         for _ in range(self.n_iters):
             y_predicted = np.dot(X, self.weights) + self.bias
             # compute gradients
